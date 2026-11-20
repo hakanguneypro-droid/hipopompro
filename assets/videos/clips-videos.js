@@ -1,6 +1,6 @@
 window.motionVideos = [
   {
-    title: 'KLİP 01',
+    title: 'REYNMEN - CEHENNEM',
     src: 'clips/klip-01.mp4'
   }
 ];
