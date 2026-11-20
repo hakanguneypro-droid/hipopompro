@@ -1,17 +1,17 @@
-MOTION SAYFASINA VIDEO EKLEME
+HAREKETLİ GÖRÜNTÜLER SAYFASINA VİDEO EKLEME
 
-1. Yeni MP4 videoyu bu klasore kopyala: assets/videos/
-   Video codec'i H.264, ses codec'i AAC olmali. HEVC/H.265 bazi tarayicilarda acilmaz.
-2. Bu klasordeki motion-videos.js dosyasini ac.
-3. motionVideos listesine yeni bir kayit ekle:
+1. Yeni MP4 videoyu bu klasöre kopyala: assets/videos/
+   Video kodlayıcısı H.264, ses kodlayıcısı AAC olmalı. HEVC/H.265 bazı tarayıcılarda açılmaz.
+2. Bu klasördeki motion-videos.js dosyasını aç.
+3. motionVideos listesine yeni bir kayıt ekle:
 
   {
-    title: 'Video basligi',
+    title: 'Video başlığı',
     src: 'assets/videos/video-dosyasi.mp4'
   }
 
-Dosya adinda bosluk varsa %20 kullan. Kayitlari virgulle ayir.
-Ornegin: assets/videos/ornek%20video.mp4
+Dosya adında boşluk varsa %20 kullan. Kayıtları virgülle ayır.
+Örneğin: assets/videos/ornek%20video.mp4
 
-Siteyi yeniden yayinladiginda ziyaretciler MOTION sayfasinda videolari izler.
-Yeni video dosyasini ve motion-videos.js dosyasini siteye birlikte yukle.
+Siteyi yeniden yayımladığında ziyaretçiler Hareketli Görüntüler sayfasında videoları izler.
+Yeni video dosyasını ve motion-videos.js dosyasını siteye birlikte yükle.
