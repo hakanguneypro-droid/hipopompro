@@ -1,0 +1,135 @@
+.motion-body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #111;
+  color: white;
+}
+
+.motion-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 6%;
+  border-bottom: 1px solid #ffffff35;
+}
+
+.motion-header .brand {
+  color: white;
+}
+
+.motion-back {
+  color: #c7c7c7;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.6px;
+  transition: color 0.2s;
+}
+
+.motion-back:hover {
+  color: var(--accent);
+}
+
+.motion-content {
+  width: min(1200px, 88%);
+  margin: 0 auto;
+  padding: 7vh 0 64px;
+  flex: 1;
+}
+
+.motion-intro {
+  margin-bottom: 34px;
+}
+
+.motion-intro h1 {
+  margin: 0 0 16px;
+  font-size: clamp(54px, 8vw, 96px);
+  line-height: 0.9;
+}
+
+.motion-intro p:last-child {
+  max-width: 600px;
+  margin: 0;
+  color: #aaa;
+  line-height: 1.7;
+}
+
+.motion-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.motion-card {
+  min-width: 0;
+  background: #000;
+}
+
+.motion-card-video {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: #000;
+  object-fit: contain;
+}
+
+.motion-card-title {
+  margin: 0;
+  padding: 15px 16px;
+  color: white;
+  font: 600 15px Manrope, sans-serif;
+}
+
+.motion-card-error {
+  margin: 0;
+  padding: 0 16px 16px;
+  color: #ffb6b6;
+  font-size: 12px;
+}
+
+.motion-gallery:empty::after {
+  grid-column: 1 / -1;
+  padding: 20px;
+  border: 1px solid #ffffff24;
+  color: #888;
+  font-size: 12px;
+  content: "Henüz video eklenmedi.";
+}
+
+.motion-footer {
+  padding: 0 24px 24px;
+  color: #777;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 1.7px;
+  text-align: center;
+}
+
+@media (max-width: 760px) {
+  .motion-header {
+    padding: 20px 6%;
+  }
+
+  .motion-header .brand {
+    font-size: 18px;
+  }
+
+  .motion-back {
+    font-size: 8px;
+    letter-spacing: 1px;
+  }
+
+  .motion-content {
+    width: 88%;
+    padding: 56px 0 48px;
+  }
+
+  .motion-intro {
+    margin-bottom: 26px;
+  }
+
+  .motion-gallery {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+}

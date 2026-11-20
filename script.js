@@ -1,0 +1,3 @@
+const toggle=document.querySelector('.menu-toggle');const nav=document.querySelector('.nav');toggle.addEventListener('click',()=>{const open=nav.classList.toggle('open');toggle.setAttribute('aria-expanded',String(open));});nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');toggle.setAttribute('aria-expanded','false')}));
+
+const heroSlides=document.querySelectorAll('.hero-slide');const reduceMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches;if(heroSlides.length>1&&!reduceMotion){let activeSlide=0;window.setInterval(()=>{heroSlides[activeSlide].classList.remove('is-active');activeSlide=(activeSlide+1)%heroSlides.length;heroSlides[activeSlide].classList.add('is-active');},6000);}

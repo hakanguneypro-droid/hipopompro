@@ -1,0 +1,62 @@
+.hero-slideshow {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+
+.hero-copy h1 {
+  font-family: 'Manrope', sans-serif;
+  font-size: clamp(42px, 7.2vw, 104px);
+  font-weight: 600;
+  letter-spacing: -0.055em;
+  line-height: 0.96;
+}
+
+.hero-slide {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transform: scale(1.04);
+  transition: opacity 1.2s ease, transform 6s ease;
+}
+
+.hero-slide.is-active {
+  opacity: 0.62;
+  transform: scale(1.1);
+}
+
+.vertical-note a {
+  transition: color 0.2s;
+}
+
+.vertical-note a:hover {
+  color: var(--accent);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-slide {
+    transition: opacity 0.3s ease;
+    transform: none;
+  }
+}
+
+.work-card,
+.work-card.wide {
+  height: 330px;
+}
+
+@media (max-width: 760px) {
+
+  .hero-copy h1 {
+    font-size: clamp(36px, 9vw, 62px);
+    line-height: 0.98;
+  }
+
+  .work-card,
+  .work-card.wide {
+    height: 300px;
+  }
+}
