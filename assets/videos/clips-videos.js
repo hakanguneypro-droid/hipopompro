@@ -16,3 +16,6 @@ window.motionVideos = [
     src: 'clips/KERİMCAN DURMAZ - VİDA LOCA.mp4'
   }
 ];
+
+
+
