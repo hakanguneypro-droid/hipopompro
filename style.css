@@ -634,7 +634,7 @@ footer {
   justify-content: center;
   gap: 12px;
 
-  color: #fff;
+  color: #ffffff;
   text-decoration: none;
   font-size: 15px;
   font-weight: 500;
@@ -650,7 +650,7 @@ footer {
 /* ORTA */
 .email-contact {
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(0%);
 }
 
 /* SAĞ */
@@ -682,7 +682,7 @@ footer {
 }
 
 .email-contact:hover {
-  transform: translate(-50%, -5px);
+  transform: translate(0%, -5px);
 }
 
 /* MOBİL */
@@ -712,4 +712,87 @@ footer {
   .email-contact i {
     font-size: 20px;
   }
+}
+
+
+/* E-POSTAYI TAM EKRAN ORTASINA SABİTLE */
+.email-contact {
+  position: fixed !important;
+  left: 50% !important;
+  right: auto !important;
+  bottom: 30px !important;
+  transform: translateX(-50%) !important;
+  width: max-content !important;
+  z-index: 999999 !important;
+}
+
+.email-contact:hover {
+  transform: translateX(-50%) translateY(-5px) !important;
+}
+
+
+
+/* HIPOPOTAM PRO - ANTRASİT TEMA */
+
+:root {
+  --anthracite: #292D30;
+  --light-gray: #E5E5E5;
+  --white: #FFFFFF;
+  --lime: #B7F52A;
+}
+
+/* Sayfa arka planı */
+html,
+body,
+main,
+section {
+  background-color: var(--anthracite) !important;
+  color: var(--white) !important;
+}
+
+/* Ana başlıklar */
+h1,
+h2,
+h3 {
+  color: var(--white) !important;
+}
+
+/* Açıklama metinleri */
+p {
+  color: var(--light-gray) !important;
+}
+
+/* Küçük açıklamalar */
+.about,
+.about-section,
+.section-label {
+  color: #B7B7B7 !important;
+}
+
+/* Footer */
+footer {
+  background-color: #202326 !important;
+  color: var(--white) !important;
+}
+
+footer a,
+footer p,
+footer span {
+  color: var(--white) !important;
+}
+
+/* Linkler */
+a:hover {
+  color: var(--lime) !important;
+}
+
+/* Mail */
+.email-contact {
+  color: var(--white) !important;
+}
+
+/* Metin seçimi */
+::selection {
+  background: var(--lime);
+  color: var(--anthracite);
 }
