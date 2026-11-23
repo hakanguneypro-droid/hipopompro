@@ -796,3 +796,18 @@ a:hover {
   background: var(--lime);
   color: var(--anthracite);
 }
+/* Hakkımızda: beyaz zemin ve okunaklı koyu metin */
+html body main section.intro {
+  background-color: #ffffff !important;
+  color: #101010 !important;
+}
+html body main section.intro h2 {
+  color: #101010 !important;
+}
+html body main section.intro p,
+html body main section.intro .eyebrow {
+  color: #555555 !important;
+}
+html body main section.intro h2 em {
+  color: #777777 !important;
+}
