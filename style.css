@@ -945,3 +945,10 @@ html body main section.intro h2 em { color: #777 !important; }
 /* Hipopotam Pro white mark beside header/footer brand */
 .brand-hippo{width:32px;height:32px;object-fit:contain;display:inline-block;vertical-align:middle;margin-right:9px;flex-shrink:0}.brand{display:inline-flex;align-items:center}.footer-brand .brand-hippo{width:42px;height:42px}
 @media(max-width:600px){.brand-hippo{width:26px;height:26px;margin-right:6px}}
+
+/* Footer logo centered above wordmark; restore green PRO */
+.premium-contact .footer-bottom .footer-brand{display:inline-flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;text-align:center}
+.premium-contact .footer-bottom .footer-brand .brand-hippo{width:52px;height:52px;margin:0;display:block}
+.premium-contact .footer-bottom .footer-brand .footer-brand-word{display:inline-block;white-space:nowrap;color:#fff}
+.premium-contact .footer-bottom .footer-brand .brand-pro{color:#d6ff3f!important}
+@media(max-width:600px){.premium-contact .footer-bottom .footer-brand .brand-hippo{width:42px;height:42px}}
