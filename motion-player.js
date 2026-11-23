@@ -13,7 +13,7 @@
     video.playsInline = true;
     video.setAttribute('aria-label', item.title || 'Proje videosu');
     // Encode each filename/path segment, particularly spaces, Turkish letters and #.
-    video.src = item.src.split('/').map(encodeURIComponent).join('/');
+    video.src = item.src.split('/').map(segment => { try { return encodeURIComponent(decodeURIComponent(segment)); } catch { return encodeURIComponent(segment); } }).join('/');
     const title = document.createElement('h2');
     title.className = 'motion-card-title';
     title.textContent = item.title || 'Proje';
