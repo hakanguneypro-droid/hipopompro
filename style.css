@@ -986,3 +986,12 @@ html body main section.intro h2 em { color: #777 !important; }
 /* Display full original Production artwork without redrawing */
 .intro .about-production-logo .about-original-logo{width:min(100%,390px)!important;height:auto!important;max-height:none!important;object-fit:contain!important}
 @media(max-width:600px){.intro .about-production-logo .about-original-logo{width:min(88vw,320px)!important}}
+
+/* Preserve uploaded hippo illustration, display original shape on white and black wordmark */
+.intro .about-production-logo{background:#fff!important;color:#000!important;gap:0!important;padding:22px 12px 26px!important}
+.intro .about-hippo-crop{position:relative;width:min(100%,390px);aspect-ratio:900/435;overflow:hidden;background:#fff}
+.intro .about-hippo-crop img{position:absolute;display:block;width:100%;height:auto;max-height:none;top:0;left:0;object-fit:initial}
+.intro .about-black-wordmark{display:flex;flex-direction:column;align-items:center;width:min(100%,390px);color:#000;line-height:1;margin-top:5px}
+.intro .about-black-wordmark strong{font-family:Manrope,Arial,sans-serif;font-size:clamp(29px,5vw,49px);font-weight:900;letter-spacing:-.055em;white-space:nowrap;color:#000}
+.intro .about-black-wordmark span{font-family:Manrope,Arial,sans-serif;font-size:clamp(11px,1.7vw,18px);font-weight:400;letter-spacing:.45em;padding-left:.45em;margin-top:8px;color:#000}
+@media(max-width:600px){.intro .about-hippo-crop,.intro .about-black-wordmark{width:min(85vw,320px)}}
