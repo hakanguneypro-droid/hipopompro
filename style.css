@@ -924,3 +924,9 @@ a:hover {
   .contact-social-button svg,.contact-social-button i {width: 30px;height: 30px;font-size: 30px;}
   .contact-social-button span {font-size: 10px;letter-spacing: .7px;}
 }
+
+/* Beyaz hakkımızda bölümü */
+html body main section.intro { background-color: #fff !important; color: #101010 !important; }
+html body main section.intro h2 { color: #101010 !important; }
+html body main section.intro p, html body main section.intro .eyebrow { color: #555 !important; }
+html body main section.intro h2 em { color: #777 !important; }
