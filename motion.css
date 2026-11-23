@@ -133,3 +133,5 @@
     gap: 18px;
   }
 }
+
+.motion-card-error[hidden] { display: none; }
