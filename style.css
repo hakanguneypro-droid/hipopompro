@@ -796,3 +796,46 @@ a:hover {
   background: var(--lime);
   color: var(--anthracite);
 }
+/* Ana sayfa görselinin sağındaki dört portfolyo bağlantısı */
+.hero-portfolio-links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 18px;
+  top: 50%;
+  right: 3%;
+  transform: translateY(-50%);
+  writing-mode: horizontal-tb;
+  z-index: 3;
+}
+.hero-portfolio-links a {
+  color: rgba(255,255,255,.88);
+  font: 700 10px 'DM Sans',sans-serif;
+  letter-spacing: 1.5px;
+  text-align: right;
+  width: 100%;
+  border-right: 2px solid rgba(255,255,255,.35);
+  padding: 5px 11px 5px 0;
+  transition: color .2s,border-color .2s;
+}
+.hero-portfolio-links a:hover,
+.hero-portfolio-links a:focus-visible {
+  color: var(--lime,#b7f52a);
+  border-color: var(--lime,#b7f52a);
+}
+@media(max-width:760px) {
+  .hero-portfolio-links {
+    display: flex;
+    right: 4%;
+    top: auto;
+    bottom: 115px;
+    transform: none;
+    gap: 10px;
+    align-items: flex-end;
+  }
+  .hero-portfolio-links a {
+    font-size: 9px;
+    letter-spacing: .8px;
+    padding: 4px 8px 4px 0;
+  }
+}
