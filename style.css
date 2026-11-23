@@ -960,3 +960,11 @@ html body main section.intro h2 em { color: #777 !important; }
 .premium-contact .footer-bottom .footer-brand .footer-brand-word{display:block;line-height:1.15}
 .premium-contact .footer-bottom .footer-brand .brand-pro{color:#d6ff3f!important}
 @media(max-width:600px){.premium-contact .footer-bottom .footer-brand .brand-hippo{width:52px!important;height:52px!important}}
+
+/* Final brand/contact refinements */
+.topbar .brand-hippo{width:27px!important;height:27px!important;margin-right:7px!important}
+.premium-contact .footer-bottom .footer-brand .brand-hippo{width:48px!important;height:48px!important}
+.contact-social-button{min-height:150px;padding:18px 12px;gap:16px}
+.contact-social-button svg,.contact-social-button i{width:40px;height:40px;font-size:40px}
+@media(max-width:760px){.contact-social-button{min-height:102px;padding:12px 4px;gap:10px}.contact-social-button svg,.contact-social-button i{width:30px;height:30px;font-size:30px}}
+@media(max-width:600px){.topbar .brand-hippo{width:23px!important;height:23px!important}.premium-contact .footer-bottom .footer-brand .brand-hippo{width:40px!important;height:40px!important}}
