@@ -982,3 +982,7 @@ html body main section.intro h2 em { color: #777 !important; }
 .intro .about-production-wordmark strong{font-family:Manrope,sans-serif;font-weight:800;font-size:clamp(30px,5vw,55px);letter-spacing:-.055em}
 .intro .about-production-wordmark span{font-family:Manrope,sans-serif;font-size:clamp(12px,1.9vw,20px);font-weight:400;letter-spacing:.46em;padding-left:.46em;margin-top:6px}
 @media(max-width:600px){.intro .about-production-logo{margin-bottom:32px}.intro .about-production-logo img{width:105px;height:120px}}
+
+/* Display full original Production artwork without redrawing */
+.intro .about-production-logo .about-original-logo{width:min(100%,390px)!important;height:auto!important;max-height:none!important;object-fit:contain!important}
+@media(max-width:600px){.intro .about-production-logo .about-original-logo{width:min(88vw,320px)!important}}
