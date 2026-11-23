@@ -968,3 +968,9 @@ html body main section.intro h2 em { color: #777 !important; }
 .contact-social-button svg,.contact-social-button i{width:40px;height:40px;font-size:40px}
 @media(max-width:760px){.contact-social-button{min-height:102px;padding:12px 4px;gap:10px}.contact-social-button svg,.contact-social-button i{width:30px;height:30px;font-size:30px}}
 @media(max-width:600px){.topbar .brand-hippo{width:23px!important;height:23px!important}.premium-contact .footer-bottom .footer-brand .brand-hippo{width:40px!important;height:40px!important}}
+
+/* Compact footer contact cards: reduce width and height, preserve icon size */
+.premium-contact .contact-social-grid{max-width:790px;margin-left:auto;margin-right:auto;gap:14px}
+.premium-contact .contact-social-button{min-height:128px;padding:14px 10px;gap:12px}
+.premium-contact .contact-social-button svg,.premium-contact .contact-social-button i{width:40px;height:40px;font-size:40px}
+@media(max-width:760px){.premium-contact .contact-social-grid{max-width:100%;gap:8px}.premium-contact .contact-social-button{min-height:94px;padding:10px 3px;gap:8px}.premium-contact .contact-social-button svg,.premium-contact .contact-social-button i{width:30px;height:30px;font-size:30px}}
