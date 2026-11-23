@@ -952,3 +952,11 @@ html body main section.intro h2 em { color: #777 !important; }
 .premium-contact .footer-bottom .footer-brand .footer-brand-word{display:inline-block;white-space:nowrap;color:#fff}
 .premium-contact .footer-bottom .footer-brand .brand-pro{color:#d6ff3f!important}
 @media(max-width:600px){.premium-contact .footer-bottom .footer-brand .brand-hippo{width:42px;height:42px}}
+
+/* Explicit separation: black header icon, white footer icon */
+.topbar .brand-hippo{filter:none}
+.premium-contact .footer-bottom .footer-brand{flex-direction:column!important;align-items:center!important;gap:10px!important}
+.premium-contact .footer-bottom .footer-brand .brand-hippo{display:block!important;width:64px!important;height:64px!important;margin:0 auto!important;filter:none}
+.premium-contact .footer-bottom .footer-brand .footer-brand-word{display:block;line-height:1.15}
+.premium-contact .footer-bottom .footer-brand .brand-pro{color:#d6ff3f!important}
+@media(max-width:600px){.premium-contact .footer-bottom .footer-brand .brand-hippo{width:52px!important;height:52px!important}}
