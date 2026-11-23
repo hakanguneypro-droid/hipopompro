@@ -811,3 +811,13 @@ html body main section.intro .eyebrow {
 html body main section.intro h2 em {
   color: #777777 !important;
 }
+
+/* Hipopotam Pro: marka simgesi ve kompakt iletisim dugmeleri */
+.topbar .brand {display:inline-flex;align-items:center;gap:9px}
+.brand-hippo {display:block;width:31px;height:34px;object-fit:contain;flex-shrink:0}
+.footer-bottom .footer-brand {display:inline-flex;flex-direction:column;align-items:center;gap:8px;text-align:center}
+.footer-bottom .footer-brand .brand-hippo {width:48px;height:52px}
+.footer-bottom .footer-brand .brand-word {white-space:nowrap}
+.fixed-contact {background:rgba(17,20,23,.78);border:1px solid rgba(255,255,255,.18);border-radius:7px;padding:7px 11px;gap:7px;font-size:12px;box-shadow:0 4px 18px rgba(0,0,0,.12);backdrop-filter:blur(6px)}
+.fixed-contact i {font-size:19px}
+@media(max-width:650px){.topbar .brand .brand-hippo{width:24px;height:28px}.fixed-contact{padding:7px 8px;gap:5px;font-size:10px}.fixed-contact i{font-size:17px}.footer-bottom .footer-brand .brand-hippo{width:43px;height:47px}}
