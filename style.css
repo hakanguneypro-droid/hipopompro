@@ -821,3 +821,14 @@ html body main section.intro h2 em {
 .fixed-contact {background:rgba(17,20,23,.78);border:1px solid rgba(255,255,255,.18);border-radius:7px;padding:7px 11px;gap:7px;font-size:12px;box-shadow:0 4px 18px rgba(0,0,0,.12);backdrop-filter:blur(6px)}
 .fixed-contact i {font-size:19px}
 @media(max-width:650px){.topbar .brand .brand-hippo{width:24px;height:28px}.fixed-contact{padding:7px 8px;gap:5px;font-size:10px}.fixed-contact i{font-size:17px}.footer-bottom .footer-brand .brand-hippo{width:43px;height:47px}}
+
+/* Mobil performans ve erisilebilirlik */
+@media (max-width:650px){
+  .fixed-contact{min-width:42px;min-height:42px;padding:8px!important;justify-content:center}
+  .fixed-contact span{display:none}
+  .instagram-contact{left:5%}
+  .whatsapp-contact{right:5%}
+  .email-contact{left:50%!important;transform:translateX(-50%)!important}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.work-card img,.fixed-contact{transition:none!important}}
+.fixed-contact:focus-visible,.nav a:focus-visible,.brand:focus-visible{outline:2px solid #d6ff3f;outline-offset:4px}
