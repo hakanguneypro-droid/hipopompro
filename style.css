@@ -930,3 +930,18 @@ html body main section.intro { background-color: #fff !important; color: #101010
 html body main section.intro h2 { color: #101010 !important; }
 html body main section.intro p, html body main section.intro .eyebrow { color: #555 !important; }
 html body main section.intro h2 em { color: #777 !important; }
+
+/* Mobil performans ve erisilebilirlik */
+@media (max-width:650px){
+  .fixed-contact{min-width:42px;min-height:42px;padding:8px!important;justify-content:center}
+  .fixed-contact span{display:none}
+  .instagram-contact{left:5%}
+  .whatsapp-contact{right:5%}
+  .email-contact{left:50%!important;transform:translateX(-50%)!important}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.work-card img,.fixed-contact{transition:none!important}}
+.fixed-contact:focus-visible,.nav a:focus-visible,.brand:focus-visible{outline:2px solid #d6ff3f;outline-offset:4px}
+
+/* Hipopotam Pro white mark beside header/footer brand */
+.brand-hippo{width:32px;height:32px;object-fit:contain;display:inline-block;vertical-align:middle;margin-right:9px;flex-shrink:0}.brand{display:inline-flex;align-items:center}.footer-brand .brand-hippo{width:42px;height:42px}
+@media(max-width:600px){.brand-hippo{width:26px;height:26px;margin-right:6px}}
