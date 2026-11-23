@@ -974,3 +974,11 @@ html body main section.intro h2 em { color: #777 !important; }
 .premium-contact .contact-social-button{min-height:128px;padding:14px 10px;gap:12px}
 .premium-contact .contact-social-button svg,.premium-contact .contact-social-button i{width:40px;height:40px;font-size:40px}
 @media(max-width:760px){.premium-contact .contact-social-grid{max-width:100%;gap:8px}.premium-contact .contact-social-button{min-height:94px;padding:10px 3px;gap:8px}.premium-contact .contact-social-button svg,.premium-contact .contact-social-button i{width:30px;height:30px;font-size:30px}}
+
+/* Hipopotam Production emblem above about text, white background */
+.intro .about-production-logo{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;max-width:100%;margin:0 auto 48px;padding:14px 0 22px;background:#fff;color:#111;text-align:center}
+.intro .about-production-logo img{display:block;width:140px;height:160px;object-fit:contain}
+.intro .about-production-wordmark{display:flex;flex-direction:column;align-items:center;color:#111;line-height:1}
+.intro .about-production-wordmark strong{font-family:Manrope,sans-serif;font-weight:800;font-size:clamp(30px,5vw,55px);letter-spacing:-.055em}
+.intro .about-production-wordmark span{font-family:Manrope,sans-serif;font-size:clamp(12px,1.9vw,20px);font-weight:400;letter-spacing:.46em;padding-left:.46em;margin-top:6px}
+@media(max-width:600px){.intro .about-production-logo{margin-bottom:32px}.intro .about-production-logo img{width:105px;height:120px}}
